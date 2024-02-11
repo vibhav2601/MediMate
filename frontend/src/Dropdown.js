@@ -15,7 +15,7 @@ function Dropdown({ title, details }) {
   
     return (
       <div>
-        <button onClick={toggleDropdown}>{title}</button>
+        <button onClick={toggleDropdown} class="backNextButtons">{title}</button>
         {isOpen && (
           <table style={tableStyle} className="dropdown-table">
             <thead>

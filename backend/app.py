@@ -55,7 +55,7 @@ def predict_diseases_and_insuraces():
     # print(insurance_predictions)
     a= Explanation()
     see_why = a.get_explanations(disease_weights, insurance_names)
-    # print("see why", see_why)
+    print("see why", see_why)
     return jsonify({'message': 'Diseases predicted', 'disease predictions': disease_weights, 'insurance predictions': insurance_predictions, 'see why': see_why}), 201
 
 

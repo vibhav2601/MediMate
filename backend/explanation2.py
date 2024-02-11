@@ -64,10 +64,12 @@ class Explanation:
                 #disease prob * disease_to_measure * measure_to_insurance
                 # print(top_checks_covered)
                 coverage = np.array([insurance_plans[insurance_plan][i] for i in indices_of_top_checks])
+                coverage = np.abs(coverage)
                 for coverage_idx, index in enumerate(indices_of_top_checks):
-                    if measure_names[index] not in important_measures.keys():
-                        important_measures[measure_names[index]] = (set(), coverage[coverage_idx])
-                    important_measures[measure_names[index]][0].add(disease_names[i])
+                    key = measure_names[index][5:]
+                    if key not in important_measures.keys():
+                        important_measures[key] = (set(), coverage[coverage_idx])
+                    important_measures[key][0].add(disease_names[i])
                 # print('coverage', coverage)
             # print(insurance_providers['Contract Name'][insurance_plan])
             important_measures_all[insurance_providers['Contract Name'][insurance_plan]] = important_measures
