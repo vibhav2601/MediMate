@@ -1,0 +1,6 @@
+insurance plan is (47, 642)
+essentially implying 642 insurance plans and 47 measures
+we have 41 diseases
+disease_measure is 41 x 47, 
+1*47 is the weight of each check
+1x47 is the check for each insurance plan

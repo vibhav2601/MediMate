@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+.login-form-input {
+  display: block;
+  margin-bottom: 20px; /* Adjusted for consistency */
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 8px;
+  background-color: #fff; /* Change to white or any color you wish */
+  border: 1px solid #ddd; /* Default border color */
+  width: 100%; /* Full width - adjust as necessary */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #ddd;
+}
+
+body .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: red;
+}
+
+body .MuiFormControl-root {
+  margin-bottom: 20px;
+}
+
+body .MuiButton-root {
+  margin: 10px;
+  background-color: red;
+  color: white;
+}
+
+body .MuiButton-root:hover {
+  background-color: darkred;
+}
+
+/* Change border color when input is focused */
+.login-form-input:focus {
+  border-color: red;
+  outline: none; /* Remove the default focus outline */
+}
+
+.multi-step-form-container {
+  position: relative; /* Added to position the logo container absolutely within this container */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align items to the left */
+  position: fixed; /* Fix position to the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: red; /* Solid red background */
+  z-index: 1000; /* High z-index to ensure it stays on top */
+  padding: 10px; /* Add some padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+}
+
+.logo {
+  width: 50px; /* Your desired logo width */
+  height: 50px; /* Your desired logo height */
+  /* Ensure the logo has a transparent background so it blends into the bar */
+}
+
+.logo-text {
+  color: white; /* Set text color to white */
+  font-size: 1.5rem; /* Adjust to your preferred font size */
+  font-weight: bold;
+  margin-left: 10px; /* Space between logo and text */
+}
+
+/* Additional padding on the body to prevent content from being hidden behind the bar */
+body {
+  padding-top: 10px; /* Adjust based on the actual height of your fixed header */
+}
+
+
+.multi-step-form-container {
+  /* This container holds your form and the logo */
+  position: relative;
+  padding-top: 80px; /* Add padding to top to prevent overlap with the fixed logo */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: fixed; /* Fix position to the top of the page */
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: red; /* Or any color that matches your branding */
+  z-index: 10; /* Ensures the logo is above other content */
+}
+
+
+.logo-text {
+  color: #ffffff;
+  font-size: 1.5rem; /* Adjust to your preferred font size */
+  font-weight: bold;
+  margin-left: 10px; /* Space between logo and text */
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* If you want a circular logo */
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.insurance-list-container {
+  margin-top: 20px;
+}
+
+.insurance-list {
+  list-style-type: none; /* Removes default list item bullets */
+  padding: 0;
+}
+
+.insurance-list li {
+  background-color: white; /* Light grey background */
+  margin-bottom: 5px; /* Spacing between list items */
+  padding: 10px; /* Padding inside list items */
+}
+
+.results-container {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center the items horizontally */
+  gap: 100px; /* Adjust the space between the flex items */
+  /* Remove or reduce padding and margin as necessary */
+}
+
+.chart-container {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  margin-left: 150px; /* Reduce the space on the right of the chart, if needed */
+  /* You can also set a specific width and height here if needed */
+}
+
+.predictions-list-container {
+  flex: 1; /* Allow this container to grow */
+  margin-left: -600px; /* Reduce the space on the left of the list, if needed */
+  padding: 0; /* Remove padding if any */
+}
+
+
+.chart-container {
+  width: 1000px;
+  height: 500px;
+  position: relative; /* Chart.js uses absolute positioning */
+}
+
+
+.form-heading {
+  font-weight: bold;
+  margin-bottom: 20px; /* Add some space below the heading */
+  text-align: center; /* If you want it centered */
+  /* Additional styles if needed */
+}
+
+.predictions-list {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes the default padding */
+}
+
+
+.login-page {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+
+.title-section {
+  width: 43%;
+  background-color: #FFCACA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 80px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.familyHistoryContainer {
+  display: flex; /* Use flexbox for horizontal alignment */
+  gap: 150px; /* This is the gap between the items */
+  padding: 50px;
+  overflow-x: auto; /* Allow horizontal scrolling if the content overflows */
+}
+
+
+
+.description {
+  font-style: italic;
+  margin-top: -10px; /* Reduces space below the heading */
+  margin-bottom: 10px; /* Reduces space above the checkboxes */
+}
+
+.selectedConditions {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px; /* Adds some space above the selected conditions */
+}
+
+.selectedConditionsList {
+  list-style-type: none; /* Removes default list bullet */
+  padding: 0;
+  text-align: center;
+}
+
+.selectedConditionsList li {
+  display: inline-block; /* Display list items inline */
+  margin: 0 10px; /* Add space between list items */
+}
+
+/* Existing styles */
+.backNextButtons {
+  margin: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.backNextButtons:hover {
+  background-color: darkred;
+}
+
+.familyHistoryLabel {
+  margin-bottom: 10px; /* This adds space between the checkboxes */
+}
+
+.familyHistoryHeading {
+  font-size: 1.5em; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+.backNextButtons {
+  margin: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.backNextButtons:hover {
+  background-color: darkred;
+}
+
+.selectedConditions {
+  font-weight: bold;
+  margin-top: 20px; /* Adds some space above the selected conditions */
+}
+
+.credentials-section {
+  width: 57%;
+  background-color: #DE3737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  padding: 40px; /* Adjust padding as needed */
+}
+
+
+.login-form {
+  margin-left: 10%;
+}
+
+/* Input field base styles */
+
+.login-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #FF8A00;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #E57500;
+}
+
+.login-error {
+  color: #FFCACA;
+  margin-top: 100px;
+}
+
+.typeform-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add some padding */
+}
+
+.typeform-iframe {
+  border-radius: 10px; /* Rounded corners */
+  width: 70%; /* Width relative to the container */
+  height: 80vh; /* Height relative to the viewport */
+  border: none; /* Remove the border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e0e0e0;
+  height: 20px;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.4s ease;
+}
+
+.success-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+  color: green;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress-bar {
+  width: 1%; /* Initial width */
+  height: 20px; /* Adjust as needed */
+  background-color: #4CAF50; /* Or any color you prefer */
+}
+
+.circular-progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.circular-progress {
+  transform: rotate(-90deg); /* This rotation makes the progress start from the top */
+}
+
+.dropdown-table {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.dropdown-table th,
+.dropdown-table td {
+  text-align: left;
+  /* Additional styling here */
+}
+
+
+
+/* Add more styles as needed */
